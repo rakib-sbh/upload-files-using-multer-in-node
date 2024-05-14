@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const multer = require("multer");
+const chalk = require("chalk");
+const users = require("../models/users.model");
 
 const customImageHandler = multer.diskStorage({
   destination: (req, file, cb) => {
